@@ -4,7 +4,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>DemoWebAppPy</Name>
     <RootNamespace>DemoWebAppPy</RootNamespace>
-    <InterpreterId>MSBuild|enviromentDemoPy|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|enviroment|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -95,14 +95,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="enviromentDemoPy\">
-      <Id>enviromentDemoPy</Id>
+    <Interpreter Include="enviroment\">
+      <Id>enviroment</Id>
       <Version>3.6</Version>
-      <Description>enviromentDemoPy (Python 3.6 (64-bit))</Description>
+      <Description>enviroment (Python 3.6 (32-bit))</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
-      <Architecture>X64</Architecture>
+      <Architecture>X86</Architecture>
     </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
